@@ -60,9 +60,10 @@
         <property name="poolPreparedStatements" value="${druid.poolPreparedStatements}" />
         <property name="maxOpenPreparedStatements" value="${druid.maxOpenPreparedStatements}" />
 
-        <!-- 配置监控统计拦截的filters -->
+        <!-- 配置监控统计拦截的filters
         <property name="filters" value="${druid.filters}" />
         <property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${druid.public.key}" />
+        -->
     </bean>
 
     <!-- 在Spring启动时创建 sqlSessionFactory -->

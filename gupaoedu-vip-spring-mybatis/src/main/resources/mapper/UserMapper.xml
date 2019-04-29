@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gupaoedu.crud.dao.UserMapper">
+
+    <resultMap id="empResultMap" type="com.gupaoedu.crud.bean.User">
+        <result property="userSeq" column="USERSEQ"/>
+        <result property="userId" column="USERID"/>
+    </resultMap>
+    <select id="selectUserList" parameterType="org.apache.ibatis.session.RowBounds" resultMap="empResultMap">
+        select USERSEQ,USERID from EUSER
+    </select>
+
+</mapper>
